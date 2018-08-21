@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="600.0" prefWidth="1000.0" styleClass="mainFxmlClass" stylesheets="@styles/main.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.comp.controller.MainController">
+   <children>
+      <VBox layoutX="194.0" layoutY="66.0" prefHeight="22.0" prefWidth="156.0" />
+      <FlowPane layoutY="-3.0" prefHeight="52.0" prefWidth="1038.0" style="-fx-background-color: #013243;">
+         <children>
+            <Label prefHeight="38.0" prefWidth="219.0" text="SMART Manager" textFill="#16a085">
+               <font>
+                  <Font name="Baskerville Old Face" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" top="15.0" />
+               </padding>
+            </Label>
+         </children></FlowPane>
+      <Pane layoutX="185.0" layoutY="163.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="161.0" prefWidth="324.0" style="-fx-border-color: #16a085;">
+         <children>
+            <ImageView fx:id="imgEmployee" fitHeight="150.0" fitWidth="196.0" layoutX="81.0" layoutY="6.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Employers.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="530.0" layoutY="163.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="161.0" prefWidth="324.0" style="-fx-border-color: #16a085;">
+         <children>
+            <ImageView fx:id="imgBranch" fitHeight="150.0" fitWidth="312.0" layoutX="87.0" layoutY="6.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Branches.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="530.0" layoutY="342.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="161.0" prefWidth="324.0" style="-fx-border-color: #16a085;">
+         <children>
+            <ImageView fx:id="imgStatus" fitHeight="150.0" fitWidth="312.0" layoutX="87.0" layoutY="6.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/tatusimg.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="185.0" layoutY="342.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" prefHeight="161.0" prefWidth="324.0" style="-fx-border-color: #16a085;">
+         <children>
+            <ImageView fx:id="imgProject" fitHeight="150.0" fitWidth="312.0" layoutX="87.0" layoutY="6.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Resources/Projects.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label fx:id="lblMenu" alignment="CENTER" layoutX="197.0" layoutY="77.0" opacity="0.82" prefHeight="67.0" prefWidth="625.0" text="Welcome ">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="150.0" layoutY="540.0" prefHeight="46.0" prefWidth="738.0" text="Please select one of above main operations to proceed" />
+      <ImageView fitHeight="84.0" fitWidth="85.0" layoutX="32.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
