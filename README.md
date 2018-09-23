@@ -1,4 +1,4 @@
-# Smart-Company-Manage
+# Smart-Company-Manager
 A system which can manage employees and projects in a Company.
 
 Technology Stack:- Java FX,MySQL
